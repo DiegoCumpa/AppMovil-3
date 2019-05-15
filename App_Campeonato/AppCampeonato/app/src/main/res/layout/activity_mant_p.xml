@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mant_j"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="proyecto.appcampeonato.MantPActivity"
+    android:background="@drawable/fondoapp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txtNomP"
+                    android:hint="Nombres" />
+
+                <EditText
+                    android:layout_width="187dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txtAPater"
+                    android:hint="Apellido Paterno" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="167dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txtMaterP"
+                    android:hint="Apellido Materno" />
+
+                <Spinner
+                    android:layout_width="179dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spSexo"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_width="186dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spDoc" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/txtNumDoc"
+                    android:hint="Num. documento" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <EditText
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/txtNacP"
+                    android:hint="Fecha de Nac." />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/txtEmailP"
+                    android:hint="E-mail"
+                    android:layout_weight="0.90" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/txtTelefP"
+                    android:hint="Teléfono" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spEstado" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="206dp"
+                    android:layout_height="210dp"
+                    app:srcCompat="@mipmap/userfoto"
+                    android:id="@+id/imgFotoP" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:text="Cargar Imagen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnCargar"
+                        android:backgroundTint="@android:color/holo_blue_bright" />
+
+                    <Button
+                        android:text="Tomar Foto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnTomar"
+                        android:backgroundTint="@android:color/holo_blue_bright" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/txtCodigo"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:text="Eliminar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnEliminar"
+                        android:backgroundTint="@color/colorAccent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:text="Registrar"
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRegistrar"
+                android:backgroundTint="@color/colorPrimary" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
